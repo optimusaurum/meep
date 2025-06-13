@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meep</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="meadow">
+        <!-- Mountains in background -->
+        <div class="mountains">
+            <div class="mountain mountain1"></div>
+            <div class="mountain mountain2"></div>
+            <div class="mountain mountain3"></div>
+        </div>
+        
+        <!-- Hills on the ground -->
+        <div class="hills">
+            <div class="hill-extra1"></div>
+            <div class="hill-extra2"></div>
+        </div>
+        
+        <!-- Animated flowers -->
+        <div class="flower flower1"></div>
+        <div class="flower flower2"></div>
+        <div class="flower flower3"></div>
+        <div class="flower flower4"></div>
+        <div class="flower flower5"></div>
+        
+        <!-- Flowers GIFs -->
+        <img src="{{ url_for('static', filename='images/flowers.gif') }}" alt="Animated flowers" class="flowers-gif flowers1">
+        <img src="{{ url_for('static', filename='images/flowers.gif') }}" alt="Animated flowers" class="flowers-gif flowers2">
+        <img src="{{ url_for('static', filename='images/flowers.gif') }}" alt="Animated flowers" class="flowers-gif flowers3">
+        <img src="{{ url_for('static', filename='images/flowers.gif') }}" alt="Animated flowers" class="flowers-gif flowers4">
+        <img src="{{ url_for('static', filename='images/flowers.gif') }}" alt="Animated flowers" class="flowers-gif flowers5">
+        
+        <!-- Additional flower type -->
+        <img src="{{ url_for('static', filename='images/flowers2.gif') }}" alt="Animated flowers type 2" class="flowers2-gif flowers2-1">
+        <img src="{{ url_for('static', filename='images/flowers2.gif') }}" alt="Animated flowers type 2" class="flowers2-gif flowers2-2">
+        <img src="{{ url_for('static', filename='images/flowers2.gif') }}" alt="Animated flowers type 2" class="flowers2-gif flowers2-3">
+        <img src="{{ url_for('static', filename='images/flowers2.gif') }}" alt="Animated flowers type 2" class="flowers2-gif flowers2-4">
+        <img src="{{ url_for('static', filename='images/flowers2.gif') }}" alt="Animated flowers type 2" class="flowers2-gif flowers2-5">
+        
+        <!-- Frogs -->
+        <img src="{{ url_for('static', filename='images/frog.gif') }}" alt="Animated frog" class="frog-gif frog1">
+        <img src="{{ url_for('static', filename='images/frog.gif') }}" alt="Animated frog" class="frog-gif frog2">
+        
+        <!-- Animated birds -->
+        <div class="bird bird1">
+            <img src="{{ url_for('static', filename='images/bird-flying.gif') }}" alt="Flying bird" class="bird-gif" loop="infinite">
+        </div>
+        <div class="bird bird2">
+            <img src="{{ url_for('static', filename='images/bird-flying.gif') }}" alt="Flying bird" class="bird-gif" loop="infinite">
+        </div>
+        
+        <!-- Clouds -->
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        
+        <!-- Sun -->
+        <div class="sun"></div>
+        
+        <!-- Message container -->
+        <div class="message-container">
+            <h1 class="greeting">Welcome to the Mountains!</h1>
+            <p class="note">Just for you, Alexander</p>
+            <a href="/spotify" class="spotify-link">Enter</a>
+        </div>
+    </div>
+</body>
+</html> 
